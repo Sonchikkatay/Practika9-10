@@ -110,7 +110,7 @@ void displaySpecificFlight(const Flight flights[], int count, int index) {
         showInfo(flights[index]);
     }
     else {
-        cout << "Неверный индекс рейса!" << endl;
+        cout << "Неверный индекс рейса" << endl;
     }
 }
 
