@@ -300,7 +300,6 @@ int main() {
     // Вывод всех рейсов
     printAllFlights(flights, SIZE);
 
-    // ========== ЗАДАНИЕ 1: Чтение из текстового файла ==========
     // Создаем текстовый файл с данными
     ofstream testFile("tickets.txt");
     testFile << "Минск 5200\n";
@@ -317,7 +316,6 @@ int main() {
     cout << "\n=== Данные после обновления стоимости билетов ===" << endl;
     printAllFlights(flights, SIZE);
 
-    // ========== ЗАДАНИЕ 2: Запись и чтение бинарного файла ==========
     // Создаем массив для тестовой записи
     Flight testFlights[SIZE];
     int testCount = 5;
@@ -341,10 +339,9 @@ int main() {
         showInfo(readFlights[i]);
     }
 
-    // Демонстрация работы с бинарным файлом через отдельную функцию
+    // работа с бинарным файлом 
     displayBinaryFileContent("flights.bin");
 
-    // ========== Остальные функции из задания 9 ==========
     Flight filteredFlights[SIZE];
     int filteredCount = copyFilteredFlights(flights, filteredFlights, SIZE);
 
